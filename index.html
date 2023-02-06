@@ -8,65 +8,76 @@
     <link rel="shortcut icon" href="img/logo-top.svg" type="image/x-icon">
 </head>
 <body style="font-size: larger;">
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logo.svg" alt="logo simply home" width=300 height=200>
+    <header class="header">
+            <div class="header__logo">
+                <img src="img/logo.svg" alt="logo simply home" width=300>
             </div>
+            <nav class="nav">
+                <a class="nav__item" href="#about_me">About me</a>
+                <a class="nav__item" href="#services">Services</a>
+                <a class="nav__item" href="#special_offers">Special offer</a>
+                <a class="nav__item" href="#testimonials">Testimonials</a>
+                <a class="nav__item" href="#contact_me">Contact me</a>
+            </nav>
             <div>
-                <a href="#about_me" style="text-decoration: none; color: #5c5959;">About me</a>
-                <a href="#services" style="text-decoration: none; color: #5c5959;">Services</a>
-                <a href="#special_offers" style="text-decoration: none; color: #5c5959;">Special offer</a>
-                <a href="#testimonials" style="text-decoration: none; color: #5c5959;">Testimonials</a>
-                <a href="#contact_me" style="text-decoration: none; color: #5c5959;">Contact me</a>
+                <svg>
+                    <use href="img/facebook.svg#Layer_1"></use>
+                </svg>
+                <svg>
+                    <use href="img/instagram.svg#instagram"></use>
+                </svg>
+                <svg>
+                    <use href="img/youtube.svg#Layer_1"></use>
+                </svg>
             </div>
-        </nav>
-        <h1>Simple Home</h1>
-        <h4>Professional HOME ORGANIZER in NY.</h4>
-        <button>Declutter my space</button>
+            <div class="header__text-block">
+                <h1 class="text-block-site-name">Simple Home</h1>
+                <h4 class="text-block-slogan">Professional HOME ORGANIZER in NY.</h4>
+                <a class="text-block-button" href="#services">Declutter my space</a>
+            </div>
     </header>
     <main>
-      <div id="about_me">
-        <h3>Declutter your home. Use every foot effectively.</h3>
-        <p>My name is Alice Johnson and I will help you organize the space in your house, declutter, 
+      <div id="about_me" class="about-me">
+        <h3 class="about-me-header">Declutter your home. Use every foot effectively.</h3>
+        <p class="about-me-text">My name is Alice Johnson and I will help you organize the space in your house, declutter, 
             transform your wardrobe, and put things in order. You will gain more space, more time, 
             and more happiness living in a clean and well-organized space.</p>
             <img src="img/about_me_simply.png" alt="about me">
         <p><a href="#services">Learn more</a></p>
       </div>
-      <div id="services">
-        <ol style="color: gold;">
-            <li>
-                <h4>Choose a service you need and send a request</h4>
-                <p style="color: rgb(52, 51, 50);">I will contact you as soon as possible, and we will discuss the necessary services for your space.</p>
+      <div id="services" class="services">
+        <ol class="services-list">
+            <li class="services-list-item">
+                <h4 class="services-list-item-header">Choose a service you need and send a request</h4>
+                <p class="services-list-item-text">I will contact you as soon as possible, and we will discuss the necessary services for your space.</p>
             </li>
+            <li class="services-list-item">
+                <h4 class="services-list-item-header">Decide on the perfect date for my visit</h4>
+                <p class="services-list-item-text">On the appointed day, I will come to your house, esteem the premises, and draw up a plan.</p>
+            </li class="services-list-item">
             <li>
-                <h4>Decide on the perfect date for my visit</h4>
-                <p style="color: rgb(52, 51, 50);">On the appointed day, I will come to your house, esteem the premises, and draw up a plan.</p>
-            </li>
-            <li>
-                <h4>Enjoy your free time and tidy space!</h4>
-                <p style="color: rgb(52, 51, 50);">I will make a list of things you'd better throw away. Your home will become cleaner and light-filled.</p>
+                <h4 class="services-list-item-header">Enjoy your free time and tidy space!</h4>
+                <p class="services-list-item-text">I will make a list of things you'd better throw away. Your home will become cleaner and light-filled.</p>
             </li>
         </ol>
       </div>
-      <div id="special_offers">
-        <h2>I can declutter, organize and suggest storage solutions for:</h2>
-            <div>
-                <img src="img/living_room.png" alt="living room" width="550" height="450">
-                <img src="img/craft_room.png" alt="craft room" width="550" height="450">
+      <div id="special_offers" class="offers">
+        <h2 class="offers-header">I can declutter, organize and suggest storage solutions for:</h2>
+            <div class="offers-block">
+                <img src="img/living_room.png" alt="living room" width="550">
+                <img src="img/craft_room.png" alt="craft room" width="550">
             </div>
-            <div> 
-                <img src="img/bathroom.png" alt="bathroom" width="550" height="450">
-                <img src="img/home_office.png" alt="home office" width="550" height="450">
+            <div class="offers-block"> 
+                <img src="img/bathroom.png" alt="bathroom" width="550">
+                <img src="img/home_office.png" alt="home office" width="550">
             </div>
       </div>    
-      <div id="testimonials">
-             <p style="font-size: xx-large;">I've helped <span style="color: deepskyblue;">more than 200</span> clients. What can they say?</p>
+      <div id="testimonials" class="testimonials">
+             <p>I've helped <span>more than 200</span> clients. What can they say?</p>
       </div>
     </main>
-    <footer id="contact_me">
-            <form>
+    <footer id="contact_me" class="footer">
+            <form class="footer__form">
                 <input type="text" name="user_data" placeholder="Enter your full name" value="name">
                 <input type="text" name="user_data" placeholder="Enter your phone number" value="number">
                 <input type="text" name="user_data" placeholder="Enter your e-mail" value="e-mail">
